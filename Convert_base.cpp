@@ -41,6 +41,12 @@ string convert_base(const string &s, int b1, int b2) {
 		   // Now we are 354
   }
 
+  /*to convert into a different base
+    find num%b2 and extract the last reminder
+	if the value >=10 push back the character representation for that
+	eg: 31%16=15. that would be represented as 'F'
+	Add this to stack
+  */
   string ans;
   while (x) {
     int r = x % b2;
